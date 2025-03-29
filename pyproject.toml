@@ -1,0 +1,34 @@
+[project]
+name = "reasoning-chat"
+version = "0.1.0"
+description = "Reasoning Chat System"
+authors = [
+    {name = "takkuhiro",email = "ninomiya_hirotaka@cyberagent.co.jp"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "chainlit (>=2.4.302,<3.0.0)",
+    "openai (>=1.69.0,<2.0.0)",
+    "chainlit (>=2.4.302,<3.0.0)",
+    "python-dotenv (>=1.1.0,<2.0.0)",
+    "langchain (>=0.3.21,<0.4.0)",
+    "types-requests (>=2.32.0.20250328,<3.0.0.0)",
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.15.0"
+black = "^25.1.0"
+autoflake = "^2.3.1"
+isort = "^6.0.1"
+ruff = "^0.11.2"
+vulture = "^2.14"
+
+

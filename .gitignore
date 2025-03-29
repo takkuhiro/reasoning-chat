@@ -1,0 +1,14 @@
+# Environment variables
+.env
+
+# Chainlit
+.chainlit
+
+# Python
+__pycache__/
+
+# Poetry
+.venv/
+
+# macOS
+.DS_Store
