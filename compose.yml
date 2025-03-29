@@ -1,0 +1,10 @@
+services:
+  app:
+    image: asia-northeast1-docker.pkg.dev/personal-dev-ninomiya/reasoning-chat/reasoning-chat-python:latest
+    env_file:
+      - ./.env
+    platform: linux/amd64
+    build:
+      context: ./
+    ports:
+      - "8080:8080"
